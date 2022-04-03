@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="logo">
-        <img src="../source/img/pink.svg" width="74" height="23" alt="Пинк.">
-      </a>
+
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
+          <a class="logo">
+            <img src="../source/img/pink.svg" width="74" height="23" alt="Пинк.">
+           </a>
           <ul class="main-nav__list">
             <li class="main-nav__list__item main-nav__list__item--active">
               <a>
@@ -36,7 +37,6 @@
           </ul>
         </div>
       </nav>
-
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Пинк.</h1>
@@ -49,23 +49,25 @@
             <p class="download__slogan">
             Взгляните на жизнь иначе!
             </p>
-            <img src="../source/img/phone.png" alt="Телефон." class="download-image">
+            <div class="download__image"></div>
           </header>
-          <button class="download__button">Скачать приложение</button>
+          <a href="https://www.apple.com/app-store/" class="download__button">
+            <span class="download__text">Скачать приложение</span>
+          </a>
           <ul class="download__list">
             <li class="download__item">
-              <a href="" class="download__item__apple">
-                <img src="../source/img/apple-logo.png" alt="Скачать для Apple.">
+              <a href="#" class="download__item download__apple">
+                <span class="visually-hidden download__picApple">Скачать для Apple</span>
               </a>
             </li>
             <li class="download__item">
-              <a href="" class="download__item__android">
-                <img src="../source/img/android-logo.png" alt="Скачать для Android.">
+              <a href="#" class="download__item download__android">
+                <span class="visually-hidden download__picAndroid">Скачать для Android</span>
               </a>
             </li>
             <li class="download__item">
-              <a href="" class="download__item__microsoft">
-                <img src="../source/img/microsoft-logo.png" alt="Скачать для Microsoft.">
+              <a href="#" class="download__item download__microsoft">
+                <span class="visually-hidden download__picMicrosoft">Скачать для Windows</span>
               </a>
             </li>
           </ul>
@@ -73,34 +75,35 @@
         </div>
       </section>
       <section class="advantages">
-        <h2 class="advantages__intro">Устали от серости мегаполиса?</h2>
-        <h2 class="advantages__intro">Нам есть, что вам предложить!</h2>
+        <h2 class="visually-hidden"></h2>
+        <p class="advantages__intro">Устали от серости мегаполиса?</p>
+        <p class="advantages__intro">Нам есть, что вам предложить!</p>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <div class="advantages__phone phone-hidden">
-              <img src="../source/img/iphone.png" alt="iPhone." class="advantages__item__iphone">
-              <img src="../source/img/screen-1.jpg" alt="Экран 1." class="advantages__item--screen-1">
+            <div class="advantages__phone">
+              <div class="advantages__iphone"></div>
+              <div class="advantages__screen advantages__screen--1"></div>
             </div>
             <h3 class="advantages__title">Поднимает настроение</h3>
             <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="advantages__item">
-            <div class="advantages__phone phone-hidden">
-              <img src="../source/img/iphone.png" alt="iPhone." class="advantages__item__iphone">
-              <img src="../source/img/screen-2.jpg" alt="Экран 2." class="advantages__item--screen-2">
+            <div class="advantages__phone">
+              <div class="advantages__iphone"></div>
+              <div class="advantages__screen advantages__screen--2"></div>
             </div>
               <h3 class="advantages__title">Меняет мир вокруг</h3>
             <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="advantages__item">
             <div class="advantages__phone phone-transform">
-              <img src="../source/img/iphone.png" alt="iPhone." class="advantages__item__iphone">
-              <img src="../source/img/screen-3.jpg" alt="Экран 3." class="advantages__item--screen-3">
+              <div class="advantages__iphone"></div>
+              <div class="advantages__screen advantages__screen--3"></div>
             </div>
               <h3 class="advantages__title">Заводит новых друзей</h3>
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
-          <li class="advantages__item clock-hidden">
+          <li class="advantages__item">
             <div class="clock"></div>
             <h3 class="advantages__title">Эффект на 24 часа!</h3>
             <p class="advantages__description">Британские ученые провели исследования и доказали,
@@ -112,24 +115,24 @@
       <section class="reviews">
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы</h2>
-          <div class="reviws__list slider__list">
+          <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <h3 class="reviews__name">Николай Петров</h3>
-              <span class="reviews__name--info">25 лет, водитель трамвая</span>
+              <span class="reviews__info">25 лет, водитель трамвая</span>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
             <blockquote class="reviews__item slider__item">
               <h3 class="reviews__name">Имя 2</h3>
-              <span class="reviews__name--info">Инфо 2</span>
-              <p class="review__text">"Отзыв 2"</p>
+              <span class="reviews__info">Инфо 2</span>
+              <p class="reviews__text">"Отзыв 2"</p>
             </blockquote>
             <blockquote class="reviews__item slider__item">
               <h3 class="reviews__name">Имя 3</h3>
-              <span class="reviews__name--info">Инфо 3</span>
-              <p class="review__text">"Отзыв 3"</p>
+              <span class="reviews__info">Инфо 3</span>
+              <p class="reviews__text">"Отзыв 3"</p>
             </blockquote>
           </div>
-          <p class="advantages__toggles slider__toggles">
+          <p class="reviews__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--current" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
@@ -158,7 +161,7 @@
               </div>
             </li>
           </ul>
-          <p class="reviews__toggles slider__toggles">
+          <p class="price__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle slider__toggle--current" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
@@ -186,16 +189,17 @@
             </ul>
         </div>
       </section>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056166!2d30.320853350929774!3d59.93871916896614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sae!4v1648972306432!5m2!1sru!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
-          <img src="../source/img/glasses.svg" width="59" height="40" alt="Логотип Очки." class="logo-glasses">
-          <a class="logo">
+          <a href="#" class="logo">
+            <img src="../source/img/glasses.svg" width="59" height="40" alt="Логотип Очки." class="logo-glasses">
             <img src="../source/img/pink.svg" width="74" height="23" alt="Пинк.">
           </a>
         </div>
-        <div class="main-footer__social">
+        <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
@@ -208,8 +212,8 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright">
-          <b class="copyright__text">Разработано:</b>
+        <div class="main-footer__copyright copyright">
+          <span class="copyright__text">Разработано:</span>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <img src="../source/img/htmlacademy.svg" width="27" height="34" alt="Логотип." class="html-logo">
       </a>
